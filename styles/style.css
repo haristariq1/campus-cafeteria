@@ -1,0 +1,324 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f9f5;
+    color: #26352b;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+header {
+    background: #174c35;
+    padding: 18px 5%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navbar h2 {
+    color: white;
+    font-size: 25px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #c7e89b;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(120deg, #e4f0d8, #f8f9f5);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline {
+    color: #28734d;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #174c35;
+}
+
+.hero h1 span {
+    color: #70a34a;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #56645a;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    background: #28734d;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #174c35;
+    transform: translateY(-2px);
+}
+
+/* PAGE HEADER */
+
+.page-header {
+    text-align: center;
+    padding: 65px 20px;
+    background: #e4f0d8;
+}
+
+.page-header h1 {
+    font-size: 40px;
+    color: #174c35;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #56645a;
+    font-size: 18px;
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 55px 7%;
+}
+
+.section > h2 {
+    color: #174c35;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e4e9df;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #174c35;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.card p {
+    color: #657268;
+    margin-bottom: 8px;
+}
+
+.card h2 {
+    color: #70a34a;
+    margin-top: 15px;
+}
+
+/* FEATURED DEAL */
+
+.featured {
+    background: #174c35;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.featured h2,
+.featured h3,
+.featured p {
+    color: white;
+}
+
+/* INFORMATION SECTION */
+
+.info {
+    background: #e4f0d8;
+    padding: 35px;
+    margin: 35px 7%;
+    border-radius: 14px;
+}
+
+.info h2 {
+    color: #174c35;
+    margin-bottom: 15px;
+}
+
+.info p {
+    margin-bottom: 8px;
+}
+
+/* FEEDBACK FORM */
+
+.form-container {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.form-container h2 {
+    color: #174c35;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #ccd5ca;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid #70a34a;
+}
+
+form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+/* FOOTER */
+
+footer {
+    background: #174c35;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        align-items: center;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 45px 6%;
+        min-height: auto;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .page-header h1 {
+        font-size: 30px;
+    }
+
+    .section {
+        padding: 35px 5%;
+    }
+
+    .form-container {
+        padding: 22px;
+    }
+}
